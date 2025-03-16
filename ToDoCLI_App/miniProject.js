@@ -34,6 +34,12 @@ const handlerInput = (options) => {
             // // Again showing the whole menus;
         })
     }
+    else if(options === "2")
+    {
+        console.log(toDos); // // Getting the toDos array whichever is added by user;
+        showMenu(); // // Again showing the whole menus;
+    }
+    
 };
 
 showMenu();
