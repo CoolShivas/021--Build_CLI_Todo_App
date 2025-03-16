@@ -13,7 +13,7 @@ const toDos = [];
 
 
 const showMenu = () => {
-    console.log("1 : Add a Task");
+    console.log("\n1 : Add a Task"); // // \n new line added or start from the new line;
     console.log("2 : View Task");
     console.log("3 : Exit");
     // // lineReader.question is used to write;
@@ -42,12 +42,12 @@ const handlerInput = (options) => {
     else if(options === "3")
     {
         console.log("See you again.")
-        lineReader.close();
+        lineReader.close(); // // lineReader.close is used to close the program;
     }
     else 
     {
         console.log("Invalid option. Try again !.")
-        showMenu();
+        showMenu(); // // Showing again the whole menus. If invalid option is choosed;
     }
 
 };
