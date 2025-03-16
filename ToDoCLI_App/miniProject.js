@@ -39,7 +39,12 @@ const handlerInput = (options) => {
         console.log(toDos); // // Getting the toDos array whichever is added by user;
         showMenu(); // // Again showing the whole menus;
     }
-    
+    else if(options === "3")
+    {
+        console.log("See you again.")
+        lineReader.close();
+    }
+
 };
 
 showMenu();
