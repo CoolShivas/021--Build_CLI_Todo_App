@@ -44,6 +44,11 @@ const handlerInput = (options) => {
         console.log("See you again.")
         lineReader.close();
     }
+    else 
+    {
+        console.log("Invalid option. Try again !.")
+        showMenu();
+    }
 
 };
 
