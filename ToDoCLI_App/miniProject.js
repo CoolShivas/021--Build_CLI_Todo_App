@@ -1,3 +1,15 @@
+import readline from "readline";
+// // readline is a module used to interact with CLI;
+
+
+const lineReader = readline.createInterface({
+        // // Created the property for read and write; 
+    input : process.stdin,      // Write
+    output : process.stdout     // Read
+});
+
+
+
 
 const showMenu = () => {
     console.log("1 : Add a Task");
