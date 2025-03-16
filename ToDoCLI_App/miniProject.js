@@ -36,7 +36,11 @@ const handlerInput = (options) => {
     }
     else if(options === "2")
     {
-        console.log(toDos); // // Getting the toDos array whichever is added by user;
+        // console.log(toDos); // // Getting the toDos array whichever is added by user;
+        console.log("\nHave a look on your task :- ");
+        toDos.forEach((list, index) => {
+            console.log(`${index + 1}. ${list}`)
+        }); // // Getting the data on proper format instead of this ['laptop', 'mobile'];
         showMenu(); // // Again showing the whole menus;
     }
     else if(options === "3")
