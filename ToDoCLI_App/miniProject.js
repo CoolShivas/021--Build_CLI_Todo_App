@@ -9,13 +9,23 @@ const lineReader = readline.createInterface({
 });
 
 
+const toDos = [];
 
 
 const showMenu = () => {
     console.log("1 : Add a Task");
     console.log("2 : View Task");
     console.log("3 : Exit");
+    // // lineReader.question is used to write;
+    lineReader.question("Choose an option : ", handlerInput);
+    // // User is going to choose any option from 1,2,3. While choosing option itself calls the function handlerInput;
 };
+
+
+const handlerInput = () => {
+    console.log("Writing area for the user to add task.");
+};
+
 showMenu();
 // // // // Here, we are getting the Output on Terminal as :-
 // // // // Open the Terminal and clear the stuff first.
