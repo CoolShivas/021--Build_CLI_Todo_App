@@ -22,8 +22,18 @@ const showMenu = () => {
 };
 
 
-const handlerInput = () => {
-    console.log("Writing area for the user to add task.");
+const handlerInput = (options) => {
+    if(options === "1")
+    {
+        lineReader.question("Enter your task : ", (inputData) => {
+            toDos.push(inputData);
+            // // Pushing the enter user todos in the toDos array;
+            console.log("Task added : ", inputData);
+            // // Printing the enter user todos infront of "Task added : ";
+            showMenu();
+            // // Again showing the whole menus;
+        })
+    }
 };
 
 showMenu();
