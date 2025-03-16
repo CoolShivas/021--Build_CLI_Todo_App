@@ -1,0 +1,11 @@
+{
+  "name": "todocli_app",
+  "version": "1.0.0",
+  "description": "First project using Command Line Interface to make Todo App.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shiva Chouhan",
+  "license": "ISC"
+}
